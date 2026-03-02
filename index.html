@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mangesh Phulari — Cybersecurity & Full-Stack Developer</title>
+    <meta name="description"
+        content="Aspiring Penetration Tester (eJPT Pursuing) | Web Security & Vulnerability Assessment | Full-Stack Developer | Python (Django, Flask) & JavaScript">
+    <meta name="keywords"
+        content="Mangesh Phulari, Cybersecurity, Penetration Testing, VAPT, Full-Stack Developer, Django, Flask, Python, eJPT">
+    <meta name="author" content="Mangesh Phulari">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Particle Canvas Background -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>MP<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certifications" class="nav-link">Certs</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <p class="hero-greeting">
+                <span class="greeting-line"></span>Hello, I'm
+            </p>
+            <h1 class="hero-name">Mangesh Phulari</h1>
+            <div class="hero-title-wrapper">
+                <span class="hero-title-prefix">I'm a </span>
+                <span class="typing-text" id="typing-text"></span>
+                <span class="typing-cursor">|</span>
+            </div>
+            <p class="hero-description">
+                Currently interning at Arica Tech Security LLP · Cybersecurity Practitioner focused on VAPT · Full-Stack
+                Developer · eJPT Pursuing
+            </p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i> Get In Touch
+                </a>
+                <a href="#projects" class="btn btn-outline">
+                    <i class="fas fa-code"></i> View Projects
+                </a>
+            </div>
+            <div class="hero-socials">
+                <a href="https://www.linkedin.com/in/mangeshphulari24" target="_blank" rel="noopener"
+                    aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/MangeshPhulari" target="_blank" rel="noopener" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="mailto:mangesh.m.phulari@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+917397924161" aria-label="Phone"><i class="fas fa-phone"></i></a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="section-number">01.</span> About Me
+            </h2>
+            <div class="about-grid reveal">
+                <div class="about-text">
+                    <p>
+                        Entry-level <strong>Cybersecurity Practitioner</strong> focused on <strong>Vulnerability
+                            Assessment and Penetration Testing (VAPT)</strong> with hands-on lab experience in network
+                        scanning, web application testing, and exploitation techniques.
+                    </p>
+                    <p>
+                        Built and operated a personal virtualized security lab using <strong>Kali Linux, Metasploitable,
+                            and Windows</strong> environments to simulate real-world attack scenarios including
+                        reconnaissance, enumeration, injection attacks, and credential analysis.
+                    </p>
+                    <p>
+                        Currently preparing for <strong>eJPT certification</strong> with strong foundations in TCP/IP
+                        networking, Linux systems, and web security testing methodologies. Also an experienced
+                        <strong>Full-Stack Developer</strong> skilled in Django, Flask, and JavaScript.
+                    </p>
+                    <div class="about-info-grid">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Pune, Maharashtra, India</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>mangesh.m.phulari@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 7397924161</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>B.E. in Computer Science</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-terminal">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="terminal-title">mangesh@kali:~</span>
+                        </div>
+                        <div class="terminal-body">
+                            <p><span class="terminal-prompt">$</span> <span class="terminal-cmd">whoami</span></p>
+                            <p class="terminal-output">mangesh_phulari</p>
+                            <p><span class="terminal-prompt">$</span> <span class="terminal-cmd">cat /etc/profile</span>
+                            </p>
+                            <p class="terminal-output">Role: Cybersecurity Intern @ Arica Tech Security LLP</p>
+                            <p class="terminal-output">Focus: VAPT | Web Security | Django/Flask</p>
+                            <p class="terminal-output">Cert: eJPT (In Preparation)</p>
+                            <p><span class="terminal-prompt">$</span> <span class="terminal-cmd">nmap -sV
+                                    localhost</span></p>
+                            <p class="terminal-output">PORT &nbsp;&nbsp;&nbsp;STATE &nbsp;SERVICE</p>
+                            <p class="terminal-output">22/tcp &nbsp;open &nbsp;&nbsp;ssh</p>
+                            <p class="terminal-output">80/tcp &nbsp;open &nbsp;&nbsp;http</p>
+                            <p class="terminal-output">443/tcp open &nbsp;&nbsp;https</p>
+                            <p><span class="terminal-prompt">$</span> <span class="typing-cursor-terminal">_</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="section-number">02.</span> Skills & Arsenal
+            </h2>
+            <div class="skills-grid">
+                <!-- Security Testing -->
+                <div class="skill-card reveal">
+                    <div class="skill-card-icon">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <h3>Security Testing</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Network Recon</span>
+                        <span class="skill-tag">Vuln Scanning</span>
+                        <span class="skill-tag">Web App Testing</span>
+                        <span class="skill-tag">Exploitation</span>
+                        <span class="skill-tag">MITM Simulation</span>
+                        <span class="skill-tag">Post-Exploitation</span>
+                    </div>
+                </div>
+                <!-- Security Tools -->
+                <div class="skill-card reveal">
+                    <div class="skill-card-icon">
+                        <i class="fas fa-terminal"></i>
+                    </div>
+                    <h3>Security Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag highlight">Nmap</span>
+                        <span class="skill-tag highlight">Burp Suite</span>
+                        <span class="skill-tag highlight">Metasploit</span>
+                        <span class="skill-tag highlight">Wireshark</span>
+                        <span class="skill-tag highlight">Hydra</span>
+                        <span class="skill-tag highlight">Gobuster</span>
+                        <span class="skill-tag highlight">Aircrack-ng</span>
+                    </div>
+                </div>
+                <!-- Programming -->
+                <div class="skill-card reveal">
+                    <div class="skill-card-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Programming</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Bash</span>
+                        <span class="skill-tag">C#</span>
+                    </div>
+                </div>
+                <!-- Web Development -->
+                <div class="skill-card reveal">
+                    <div class="skill-card-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">Bootstrap</span>
+                    </div>
+                </div>
+                <!-- Networking -->
+                <div class="skill-card reveal">
+                    <div class="skill-card-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Networking</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">TCP/IP</span>
+                        <span class="skill-tag">DNS</span>
+                        <span class="skill-tag">DHCP</span>
+                        <span class="skill-tag">Packet Analysis</span>
+                        <span class="skill-tag">OSI Model</span>
+                    </div>
+                </div>
+                <!-- OS & Platforms -->
+                <div class="skill-card reveal">
+                    <div class="skill-card-icon">
+                        <i class="fab fa-linux"></i>
+                    </div>
+                    <h3>OS & Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Kali Linux</span>
+                        <span class="skill-tag">Windows</span>
+                        <span class="skill-tag">Metasploitable</span>
+                        <span class="skill-tag">OWASP BWA</span>
+                        <span class="skill-tag">TryHackMe</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hands-On Security Lab Section -->
+    <section id="security-lab" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="section-number">03.</span> Security Lab Experience
+            </h2>
+            <p class="section-subtitle reveal">Hands-on experience from my personal virtualized penetration testing lab
+            </p>
+            <div class="lab-timeline">
+                <div class="lab-item reveal">
+                    <div class="lab-icon"><i class="fas fa-server"></i></div>
+                    <div class="lab-content">
+                        <h4>Lab Environment Setup</h4>
+                        <p>Built a virtualized penetration testing lab using Kali Linux, Metasploitable2, OWASP Broken
+                            Web App, and Windows to simulate real-world attack scenarios.</p>
+                    </div>
+                </div>
+                <div class="lab-item reveal">
+                    <div class="lab-icon"><i class="fas fa-search"></i></div>
+                    <div class="lab-content">
+                        <h4>Reconnaissance & Enumeration</h4>
+                        <p>Performed reconnaissance using WHOIS, DNS analysis, Shodan, and Nmap/NSE to identify exposed
+                            services and map attack surfaces.</p>
+                    </div>
+                </div>
+                <div class="lab-item reveal">
+                    <div class="lab-icon"><i class="fas fa-diagram-project"></i></div>
+                    <div class="lab-content">
+                        <h4>Network Traffic Analysis</h4>
+                        <p>Analyzed network traffic with Wireshark and conducted MITM/ARP-poisoning simulations to
+                            understand protocol and attack behavior.</p>
+                    </div>
+                </div>
+                <div class="lab-item reveal">
+                    <div class="lab-icon"><i class="fas fa-bug"></i></div>
+                    <div class="lab-content">
+                        <h4>Web Application Testing</h4>
+                        <p>Tested web applications using Burp Suite, identifying SQL Injection and XSS vulnerabilities
+                            through PortSwigger labs and OWASP Broken Web App.</p>
+                    </div>
+                </div>
+                <div class="lab-item reveal">
+                    <div class="lab-icon"><i class="fas fa-skull-crossbones"></i></div>
+                    <div class="lab-content">
+                        <h4>Exploitation & Post-Exploitation</h4>
+                        <p>Executed exploitation exercises with Metasploit, including Meterpreter access on vulnerable
+                            systems. Practiced password attacks using Hydra and aircrack-ng.</p>
+                    </div>
+                </div>
+                <div class="lab-item reveal">
+                    <div class="lab-icon"><i class="fas fa-flag"></i></div>
+                    <div class="lab-content">
+                        <h4>CTF Challenges</h4>
+                        <p>Solved Capture-The-Flag challenges on TryHackMe to practice real-world attack workflows and
+                            sharpen offensive security skills.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="section-number">04.</span> Experience
+            </h2>
+            <div class="experience-timeline">
+                <div class="exp-card reveal">
+                    <div class="exp-header">
+                        <div class="exp-company-info">
+                            <h3>Cybersecurity Intern</h3>
+                            <p class="exp-company">Arica Tech Security LLP</p>
+                        </div>
+                        <span class="exp-date">Present</span>
+                    </div>
+                    <ul class="exp-list">
+                        <li>Contributing to cybersecurity operations including vulnerability assessment and penetration
+                            testing (VAPT) engagements.</li>
+                        <li>Assisting in security audits, threat analysis, and implementing security best practices for
+                            client infrastructure.</li>
+                        <li>Gaining hands-on experience with real-world security tools and methodologies in a
+                            professional environment.</li>
+                    </ul>
+                    <div class="exp-tech">
+                        <span>VAPT</span><span>Security Audits</span><span>Threat
+                            Analysis</span><span>Cybersecurity</span>
+                    </div>
+                </div>
+
+                <div class="exp-card reveal">
+                    <div class="exp-header">
+                        <div class="exp-company-info">
+                            <h3>Web Developer</h3>
+                            <p class="exp-company">NullClass</p>
+                        </div>
+                        <span class="exp-date">Aug 2025 — Nov 2025</span>
+                    </div>
+                    <ul class="exp-list">
+                        <li>Contributed to dynamic, real-time web development projects using Django framework for both
+                            backend logic and database management.</li>
+                        <li>Developed and maintained features for robust web applications, ensuring timely project
+                            submissions and adherence to development goals.</li>
+                        <li>Maintained strict confidentiality of proprietary source code while upholding high standards
+                            of work integrity and originality.</li>
+                        <li>Authored daily progress reports for performance evaluation and engaged in continuous
+                            feedback loops for team growth.</li>
+                    </ul>
+                    <div class="exp-tech">
+                        <span>Django</span><span>Python</span><span>Database Management</span><span>Real-time
+                            Apps</span>
+                    </div>
+                </div>
+
+                <div class="exp-card reveal">
+                    <div class="exp-header">
+                        <div class="exp-company-info">
+                            <h3>Web Development Intern</h3>
+                            <p class="exp-company">CodeCraft Infotech</p>
+                        </div>
+                        <span class="exp-date">Jan 2025 — Feb 2025</span>
+                    </div>
+                    <ul class="exp-list">
+                        <li>Collaborated with the team to build responsive and user-friendly websites, ensuring
+                            compatibility across multiple platforms.</li>
+                        <li>Enhanced skills in front-end and back-end development using HTML, CSS, JavaScript, React,
+                            and Node.js.</li>
+                        <li>Worked on improving website performance and implementing modern design principles to elevate
+                            user experience.</li>
+                        <li>Gained practical insights into debugging, code optimization, and collaborating with
+                            cross-functional teams.</li>
+                    </ul>
+                    <div class="exp-tech">
+                        <span>HTML/CSS</span><span>JavaScript</span><span>React</span><span>Node.js</span>
+                    </div>
+                </div>
+
+                <div class="exp-card reveal">
+                    <div class="exp-header">
+                        <div class="exp-company-info">
+                            <h3>Cybersecurity Trainee</h3>
+                            <p class="exp-company">Tata Strive — Cybersecurity Program</p>
+                        </div>
+                        <span class="exp-date">Ongoing</span>
+                    </div>
+                    <ul class="exp-list">
+                        <li>Practical training in networking security, ethical hacking methodology, and vulnerability
+                            assessment.</li>
+                        <li>Developed hands-on skills through guided lab simulations and attack-defense exercises.</li>
+                    </ul>
+                    <div class="exp-tech">
+                        <span>Ethical Hacking</span><span>Network Security</span><span>VAPT</span><span>Lab
+                            Simulations</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="section-number">05.</span> Projects
+            </h2>
+            <div class="projects-grid">
+                <div class="project-card reveal">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-virus-slash"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/MangeshPhulari" target="_blank" rel="noopener"
+                                aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Signature-Based Malware Detection System</h3>
+                    <p class="project-description">
+                        Developed a signature-based detection tool analyzing 72,000+ file hashes to identify malicious
+                        samples. Simulated malware detection workflows used in endpoint security solutions. Gained
+                        understanding of hashing, file integrity verification, and evasion behavior.
+                    </p>
+                    <div class="project-tech">
+                        <span>C#</span><span>.NET Framework</span><span>MD5</span><span>SHA1</span><span>SHA256</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-lock"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/MangeshPhulari" target="_blank" rel="noopener"
+                                aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Text Encryption & Decryption</h3>
+                    <p class="project-description">
+                        Built encryption application with Base64 encoding and secret key authentication for secure data
+                        protection. Designed intuitive GUI with real-time encryption/decryption functionality.
+                        Implemented input validation and error handling for data integrity.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span><span>Tkinter</span><span>Base64</span><span>Cryptography</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-globe"></i></div>
+                        <div class="project-links">
+                            <a href="https://mangeshphulari.github.io/" target="_blank" rel="noopener"
+                                aria-label="Live"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/MangeshPhulari/MangeshPhulari.github.io" target="_blank"
+                                rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Personal Portfolio Website</h3>
+                    <p class="project-description">
+                        This portfolio website — designed with a cybersecurity-themed dark aesthetic, featuring particle
+                        animations, terminal-style elements, and a responsive modern layout built with vanilla HTML,
+                        CSS, and JavaScript.
+                    </p>
+                    <div class="project-tech">
+                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Canvas API</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="section-number">06.</span> Certifications & Education
+            </h2>
+            <div class="certs-education-grid">
+                <div class="certs-column">
+                    <h3 class="subsection-title reveal"><i class="fas fa-certificate"></i> Certifications</h3>
+                    <div class="cert-cards">
+                        <div class="cert-card reveal">
+                            <div class="cert-badge preparing"><i class="fas fa-crosshairs"></i></div>
+                            <div class="cert-info">
+                                <h4>eLearnSecurity Junior Penetration Tester (eJPT)</h4>
+                                <p>INE Security — In Preparation</p>
+                            </div>
+                        </div>
+                        <div class="cert-card reveal">
+                            <div class="cert-badge"><i class="fas fa-user-secret"></i></div>
+                            <div class="cert-info">
+                                <h4>Certified Ethical Hacker</h4>
+                                <p>Tutedude</p>
+                            </div>
+                        </div>
+                        <div class="cert-card reveal">
+                            <div class="cert-badge"><i class="fas fa-chart-line"></i></div>
+                            <div class="cert-info">
+                                <h4>Australia Cyber Job Simulation</h4>
+                                <p>Deloitte on Forage</p>
+                            </div>
+                        </div>
+                        <div class="cert-card reveal">
+                            <div class="cert-badge"><i class="fab fa-python"></i></div>
+                            <div class="cert-info">
+                                <h4>Certified Python Developer</h4>
+                                <p>Tutedude</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="edu-column">
+                    <h3 class="subsection-title reveal"><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <div class="edu-cards">
+                        <div class="edu-card reveal">
+                            <div class="edu-year">2020 — 2024</div>
+                            <h4>Bachelor of Engineering</h4>
+                            <p class="edu-school">MGM's College of Engineering & Technology, Nanded</p>
+                            <p class="edu-detail">Major in Computer Science — 7.6/10 CGPA</p>
+                        </div>
+                        <div class="edu-card reveal">
+                            <div class="edu-year">Ongoing</div>
+                            <h4>Tata Strive — Cybersecurity Program</h4>
+                            <p class="edu-school">Practical training in networking security & ethical hacking</p>
+                            <p class="edu-detail">Lab simulations & attack-defense exercises</p>
+                        </div>
+                        <div class="edu-card reveal">
+                            <div class="edu-year">High School</div>
+                            <h4>Shri Shivaji Secondary & Higher Secondary School</h4>
+                            <p class="edu-school">Nanded, Maharashtra</p>
+                            <p class="edu-detail">62%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="section-number">07.</span> Get In Touch
+            </h2>
+            <p class="section-subtitle reveal">
+                Interested in collaborating or have an opportunity? Feel free to reach out!
+            </p>
+            <div class="contact-grid reveal">
+                <div class="contact-info-cards">
+                    <a href="mailto:mangesh.m.phulari@gmail.com" class="contact-card">
+                        <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+                        <h4>Email</h4>
+                        <p>mangesh.m.phulari@gmail.com</p>
+                    </a>
+                    <a href="tel:+917397924161" class="contact-card">
+                        <div class="contact-card-icon"><i class="fas fa-phone"></i></div>
+                        <h4>Phone</h4>
+                        <p>+91 7397924161</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mangeshphulari24" target="_blank" rel="noopener"
+                        class="contact-card">
+                        <div class="contact-card-icon"><i class="fab fa-linkedin-in"></i></div>
+                        <h4>LinkedIn</h4>
+                        <p>mangeshphulari24</p>
+                    </a>
+                    <a href="https://github.com/MangeshPhulari" target="_blank" rel="noopener" class="contact-card">
+                        <div class="contact-card-icon"><i class="fab fa-github"></i></div>
+                        <h4>GitHub</h4>
+                        <p>MangeshPhulari</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#hero" class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>MP<span class="logo-bracket">/&gt;</span>
+                </a>
+                <p class="footer-text">Designed & Built by Mangesh Phulari</p>
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/mangeshphulari24" target="_blank" rel="noopener"
+                        aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/MangeshPhulari" target="_blank" rel="noopener" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="mailto:mangesh.m.phulari@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p class="footer-copy">&copy; 2025 Mangesh Phulari. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
